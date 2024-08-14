@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/logo.png";
 import { Hamburger, HamburgerClose } from "../Utils/Svg";
 
 export default function Header() {
