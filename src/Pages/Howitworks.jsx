@@ -44,7 +44,7 @@ export default function Howitworks() {
       <section className="how-work-section relative z-[4] inline-block w-full">
         <div className="container">
           <h2 className="text-center">
-            How It <span className="gradient-text">Works</span>
+            How <span className="gradient-text">It Works</span>
           </h2>
           <HowItWorkSection
             title={

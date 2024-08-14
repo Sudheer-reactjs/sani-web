@@ -59,7 +59,7 @@ export default function Header() {
               </ul>
               <div className="flex lg:ml-[32px]">
                 <Link className="button-gradient login-button" to="/login" onClick={toggleMobileMenu}>
-                  Login
+                  Log In 
                 </Link>
               </div>
             </nav>
