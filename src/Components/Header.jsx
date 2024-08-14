@@ -15,7 +15,7 @@ export default function Header() {
       <header>
         <div className="container">
           <div className="flex justify-between items-center">
-            <div>
+            <div> 
               <Link to="/">
                 <img src={Logo} alt="Logo" />
               </Link>
@@ -23,7 +23,7 @@ export default function Header() {
             <div className="lg:hidden">
               <button onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? <HamburgerClose /> : <Hamburger /> } 
-              </button>
+              </button> 
             </div>
             <nav
               className={`nav-menu w-full lg:justify-end lg:pl-[72px] lg:flex lg:items-center ${
