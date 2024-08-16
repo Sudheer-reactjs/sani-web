@@ -15,7 +15,7 @@ export default function Home() {
       <section className="w-full">
         <img className="w-full object-cover min-h-[100vh] hidden md:block" src={BannerImage} />
         <img className="w-full object-contain object-top min-h-[100vh] md:hidden" src={MobileBanner} /> 
-        <div className="absolute w-full top-[20%] md:top-[228px]">
+        <div className="absolute w-full top-[23%] md:top-[228px]">
           <div className="container">
             <h1 className="mb-[18px]">Subscribe and Drive</h1>
             <p className="font-[300] text-[30px] max-w-[450px] leading-[34px] md:leading-[54px] md:text-[44px] md:max-w-[550px] ">
