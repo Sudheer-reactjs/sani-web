@@ -196,6 +196,9 @@ ul.contact-icon li {
     z-index: 9;
     padding-bottom: 80px;
 }
+.mobile-menu-open {
+  overflow: hidden;
+}
 nav.nav-menu ul li {
   margin-bottom: 10px; 
 }
