@@ -87,21 +87,21 @@ export default function Howitworks() {
 
       <section className="how-work-section relative z-[4] inline-block w-full mt-[60px] lg:mt-[30px]">
         <div className="container">
-        <div className='grid md:grid-cols-2 items-center gap-[24px]'> 
-          <div className=''>
-            <h6 className="text-[#57E667] text-[24px]">Get the App</h6>
-            <h2 className=" mb-[20px] max-w-[250px] lg:max-w-[350px]">Ya gratis dong, masa <span className="gradient-text">aplikasi</span></h2>
-            <p className="max-w-[530px]">Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin 
-            aja kalo aplikasi.</p>
-            <div className="apple-store-icon flex items-center gap-[20px] flex-wrap mt-[20px] md:mt-[40px]">
-              <Link to='#'> <AppStore /></Link>
-              <Link to='#'> <GooglePlay /></Link>
+          <div className='grid md:grid-cols-2 items-center gap-[24px]'>
+            <div className=''>
+              <h6 className="text-[#57E667] text-[24px]">Get the App</h6>
+              <h2 className=" mb-[20px] max-w-[250px] lg:max-w-[350px]">Ya gratis dong, masa <span className="gradient-text">aplikasi</span></h2>
+              <p className="max-w-[530px]">Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin
+                aja kalo aplikasi.</p>
+              <div className="apple-store-icon flex items-center gap-[20px] flex-wrap mt-[20px] md:mt-[40px]">
+                <Link to='#'> <AppStore /></Link>
+                <Link to='#'> <GooglePlay /></Link>
+              </div>
+            </div>
+            <div className='flex justify-center'>
+              <img src={StoreImg} alt={StoreImg} />
             </div>
           </div>
-          <div className='flex justify-center'>
-             <img src={StoreImg} alt={StoreImg} />
-          </div>
-       </div>
         </div>
       </section>
     </>

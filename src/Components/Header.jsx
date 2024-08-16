@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { Hamburger, HamburgerClose } from "../Utils/Svg";
@@ -7,28 +7,39 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(prevState => !prevState);
   };
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden"); 
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <>
       <header>
         <div className="container">
           <div className="flex justify-between items-center">
-            <div> 
+            <div>
               <Link to="/">
                 <img src={Logo} alt="Logo" />
               </Link>
             </div>
             <div className="lg:hidden">
               <button onClick={toggleMobileMenu}>
-              {isMobileMenuOpen ? <HamburgerClose /> : <Hamburger /> } 
-              </button> 
+                {isMobileMenuOpen ? <HamburgerClose /> : <Hamburger />}
+              </button>
             </div>
             <nav
-              className={`nav-menu w-full lg:justify-end lg:pl-[72px] lg:flex lg:items-center ${
-                isMobileMenuOpen ? "flex" : "hidden"
-              }`}
+              className={`nav-menu w-full lg:justify-end lg:pl-[72px] lg:flex lg:items-center ${isMobileMenuOpen ? "flex" : "hidden"
+                }`}
             >
               <ul className="">
                 <li>
@@ -58,8 +69,12 @@ export default function Header() {
                 </li>
               </ul>
               <div className="flex lg:ml-[32px]">
-                <Link className="button-gradient login-button" to="/login" onClick={toggleMobileMenu}>
-                  Log In 
+                <Link
+                  className="button-gradient login-button"
+                  to="/login"
+                  onClick={toggleMobileMenu}
+                >
+                  Log In
                 </Link>
               </div>
             </nav>

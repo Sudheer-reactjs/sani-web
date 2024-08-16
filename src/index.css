@@ -143,6 +143,25 @@ h2{
 body.home-page footer {
   display: none;
 }
+ul.footer-nav li a {
+  font-weight: 600;
+}
+ul.footer-nav li {
+  width: calc(33.333%);
+  float: left;
+  margin-bottom: 24px;
+  padding-right: 24px;
+}
+ul.contact-icon li, ul.contact-icon li a {
+  display: flex;
+  align-items: center;
+  grid-gap: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+}
+ul.contact-icon li {
+  margin-bottom: 14px;
+}
 @media(max-width:1200px){
   .box-shadow1 {
     right: 2%;
@@ -225,6 +244,16 @@ h3 {
 }
 .apple-store-icon a svg {
   max-width: 150px;
+}
+ul.footer-nav li {
+  margin-bottom: 14px;
+  padding-right: 10px;
+}
+ul.footer-nav li {
+  width: calc(50%);
+}
+ul.footer-nav li a, footer a, footer p, footer h6 {
+  font-size: 14px;
 }
 }
 @media (max-width: 370px) {
