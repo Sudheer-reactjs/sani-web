@@ -194,6 +194,7 @@ ul.contact-icon li {
     flex-direction: column;
     justify-content: space-between;
     z-index: 9;
+    padding-bottom: 80px;
 }
 nav.nav-menu ul li {
   margin-bottom: 10px; 
