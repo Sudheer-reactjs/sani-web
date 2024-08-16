@@ -8,6 +8,7 @@ import Plans from "../Pages/Plans";
 import OurVision from "../Pages/OurVision";
 import Contacts from "../Pages/Contacts"; 
 import LogIn from "../Pages/LogIn";  
+import Footer from "../Components/Footer";
 
 export default function AllRoutes() {
   return (
@@ -24,6 +25,7 @@ export default function AllRoutes() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/login" element={<LogIn />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );

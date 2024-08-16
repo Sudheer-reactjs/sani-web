@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import BannerImage from "../assets/images/home-banner.png";
+import MobileBanner from "../assets/images/mobile-banner.png";
+import MobileCar from "../assets/images/mobile-car.png";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -12,8 +14,9 @@ export default function Home() {
   return (
     <>
       <section className="w-full">
-        <img className="w-full object-cover min-h-[100vh]" src={BannerImage} />
-        <div className="absolute w-full top-[150px] md:top-[228px]">
+        <img className="w-full object-cover min-h-[100vh] hidden md:block" src={BannerImage} />
+        <img className="w-full min-h-[100vh] md:hidden" src={MobileBanner} />
+        <div className="absolute w-full top-[26%] md:top-[228px]">
           <div className="container">
             <h1 className="mb-[18px]">Subscribe and Drive</h1>
             <p className="font-[300] text-[30px] max-w-[450px] leading-[34px] md:leading-[54px] md:text-[44px] md:max-w-[550px] ">
@@ -26,6 +29,7 @@ export default function Home() {
             >
               Get Started
             </Link>
+            <img className="w-full fixed bottom-0 left-0 right-0 md:hidden" src={MobileCar} />
           </div>
         </div>
       </section>

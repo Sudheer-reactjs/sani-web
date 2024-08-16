@@ -11,15 +11,18 @@
   font-family: "Rubik", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #191919;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: #191919;
+}
+body.home-page {
+  background: #060606;
 }
 .container{
   max-width: 1320px;
@@ -137,6 +140,9 @@ h2{
   letter-spacing: 0.4px;
   margin-right: 14px;
 }
+body.home-page footer {
+  display: none;
+}
 @media(max-width:1200px){
   .box-shadow1 {
     right: 2%;
@@ -220,4 +226,9 @@ h3 {
 .apple-store-icon a svg {
   max-width: 150px;
 }
+}
+@media (max-width: 370px) {
+  h1 {
+      font-size: 27px;
+  }
 }
